@@ -13,21 +13,12 @@
 		65F8E9031AD3C8670031B764 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65F8E9011AD3C8670031B764 /* Main.storyboard */; };
 		65F8E9051AD3C8670031B764 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65F8E9041AD3C8670031B764 /* Images.xcassets */; };
 		65F8E9081AD3C8670031B764 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F8E9061AD3C8670031B764 /* LaunchScreen.xib */; };
-		65F8E9141AD3C8670031B764 /* SceneKitTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F8E9131AD3C8670031B764 /* SceneKitTestTests.swift */; };
+		65F8E91E1AD3C9480031B764 /* SolarSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F8E91D1AD3C9480031B764 /* SolarSystem.swift */; };
+		65F8E9211AD3CB2F0031B764 /* box_wireframe.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F8E9201AD3CB2F0031B764 /* box_wireframe.png */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		65F8E90E1AD3C8670031B764 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 65F8E8EE1AD3C8670031B764 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 65F8E8F51AD3C8670031B764;
-			remoteInfo = SceneKitTest;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		65F8E8F61AD3C8670031B764 /* SceneKitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SceneKitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65F8E8F61AD3C8670031B764 /* SolarSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SolarSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F8E8FA1AD3C8670031B764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65F8E8FB1AD3C8670031B764 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65F8E8FD1AD3C8670031B764 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -35,20 +26,12 @@
 		65F8E9021AD3C8670031B764 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65F8E9041AD3C8670031B764 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		65F8E9071AD3C8670031B764 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		65F8E90D1AD3C8670031B764 /* SceneKitTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SceneKitTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		65F8E9121AD3C8670031B764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		65F8E9131AD3C8670031B764 /* SceneKitTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneKitTestTests.swift; sourceTree = "<group>"; };
+		65F8E91D1AD3C9480031B764 /* SolarSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolarSystem.swift; sourceTree = "<group>"; };
+		65F8E9201AD3CB2F0031B764 /* box_wireframe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box_wireframe.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		65F8E8F31AD3C8670031B764 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		65F8E90A1AD3C8670031B764 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -61,8 +44,7 @@
 		65F8E8ED1AD3C8670031B764 = {
 			isa = PBXGroup;
 			children = (
-				65F8E8F81AD3C8670031B764 /* SceneKitTest */,
-				65F8E9101AD3C8670031B764 /* SceneKitTestTests */,
+				65F8E8F81AD3C8670031B764 /* SolarSystem */,
 				65F8E8F71AD3C8670031B764 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,57 +52,51 @@
 		65F8E8F71AD3C8670031B764 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				65F8E8F61AD3C8670031B764 /* SceneKitTest.app */,
-				65F8E90D1AD3C8670031B764 /* SceneKitTestTests.xctest */,
+				65F8E8F61AD3C8670031B764 /* SolarSystem.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		65F8E8F81AD3C8670031B764 /* SceneKitTest */ = {
+		65F8E8F81AD3C8670031B764 /* SolarSystem */ = {
 			isa = PBXGroup;
 			children = (
 				65F8E8FB1AD3C8670031B764 /* AppDelegate.swift */,
-				65F8E8FD1AD3C8670031B764 /* art.scnassets */,
 				65F8E8FF1AD3C8670031B764 /* GameViewController.swift */,
+				65F8E91D1AD3C9480031B764 /* SolarSystem.swift */,
 				65F8E9011AD3C8670031B764 /* Main.storyboard */,
 				65F8E9041AD3C8670031B764 /* Images.xcassets */,
+				65F8E8FD1AD3C8670031B764 /* art.scnassets */,
 				65F8E9061AD3C8670031B764 /* LaunchScreen.xib */,
 				65F8E8F91AD3C8670031B764 /* Supporting Files */,
 			);
+			name = SolarSystem;
 			path = SceneKitTest;
 			sourceTree = "<group>";
 		};
 		65F8E8F91AD3C8670031B764 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				65F8E91F1AD3CB1C0031B764 /* Resources */,
 				65F8E8FA1AD3C8670031B764 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		65F8E9101AD3C8670031B764 /* SceneKitTestTests */ = {
+		65F8E91F1AD3CB1C0031B764 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				65F8E9131AD3C8670031B764 /* SceneKitTestTests.swift */,
-				65F8E9111AD3C8670031B764 /* Supporting Files */,
+				65F8E9201AD3CB2F0031B764 /* box_wireframe.png */,
 			);
-			path = SceneKitTestTests;
-			sourceTree = "<group>";
-		};
-		65F8E9111AD3C8670031B764 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				65F8E9121AD3C8670031B764 /* Info.plist */,
-			);
-			name = "Supporting Files";
+			name = Resources;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		65F8E8F51AD3C8670031B764 /* SceneKitTest */ = {
+		65F8E8F51AD3C8670031B764 /* SolarSystem */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 65F8E9171AD3C8670031B764 /* Build configuration list for PBXNativeTarget "SceneKitTest" */;
+			buildConfigurationList = 65F8E9171AD3C8670031B764 /* Build configuration list for PBXNativeTarget "SolarSystem" */;
 			buildPhases = (
 				65F8E8F21AD3C8670031B764 /* Sources */,
 				65F8E8F31AD3C8670031B764 /* Frameworks */,
@@ -130,28 +106,10 @@
 			);
 			dependencies = (
 			);
-			name = SceneKitTest;
+			name = SolarSystem;
 			productName = SceneKitTest;
-			productReference = 65F8E8F61AD3C8670031B764 /* SceneKitTest.app */;
+			productReference = 65F8E8F61AD3C8670031B764 /* SolarSystem.app */;
 			productType = "com.apple.product-type.application";
-		};
-		65F8E90C1AD3C8670031B764 /* SceneKitTestTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 65F8E91A1AD3C8670031B764 /* Build configuration list for PBXNativeTarget "SceneKitTestTests" */;
-			buildPhases = (
-				65F8E9091AD3C8670031B764 /* Sources */,
-				65F8E90A1AD3C8670031B764 /* Frameworks */,
-				65F8E90B1AD3C8670031B764 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				65F8E90F1AD3C8670031B764 /* PBXTargetDependency */,
-			);
-			name = SceneKitTestTests;
-			productName = SceneKitTestTests;
-			productReference = 65F8E90D1AD3C8670031B764 /* SceneKitTestTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -165,13 +123,9 @@
 					65F8E8F51AD3C8670031B764 = {
 						CreatedOnToolsVersion = 6.2;
 					};
-					65F8E90C1AD3C8670031B764 = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = 65F8E8F51AD3C8670031B764;
-					};
 				};
 			};
-			buildConfigurationList = 65F8E8F11AD3C8670031B764 /* Build configuration list for PBXProject "SceneKitTest" */;
+			buildConfigurationList = 65F8E8F11AD3C8670031B764 /* Build configuration list for PBXProject "SolarSystem" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -184,8 +138,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				65F8E8F51AD3C8670031B764 /* SceneKitTest */,
-				65F8E90C1AD3C8670031B764 /* SceneKitTestTests */,
+				65F8E8F51AD3C8670031B764 /* SolarSystem */,
 			);
 		};
 /* End PBXProject section */
@@ -198,14 +151,8 @@
 				65F8E9081AD3C8670031B764 /* LaunchScreen.xib in Resources */,
 				65F8E9051AD3C8670031B764 /* Images.xcassets in Resources */,
 				65F8E8FE1AD3C8670031B764 /* art.scnassets in Resources */,
+				65F8E9211AD3CB2F0031B764 /* box_wireframe.png in Resources */,
 				65F8E9031AD3C8670031B764 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		65F8E90B1AD3C8670031B764 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,26 +165,11 @@
 			files = (
 				65F8E9001AD3C8670031B764 /* GameViewController.swift in Sources */,
 				65F8E8FC1AD3C8670031B764 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		65F8E9091AD3C8670031B764 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				65F8E9141AD3C8670031B764 /* SceneKitTestTests.swift in Sources */,
+				65F8E91E1AD3C9480031B764 /* SolarSystem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		65F8E90F1AD3C8670031B764 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 65F8E8F51AD3C8670031B764 /* SceneKitTest */;
-			targetProxy = 65F8E90E1AD3C8670031B764 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		65F8E9011AD3C8670031B764 /* Main.storyboard */ = {
@@ -344,7 +276,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SceneKitTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SolarSystem;
 			};
 			name = Debug;
 		};
@@ -354,48 +286,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SceneKitTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		65F8E91B1AD3C8670031B764 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SceneKitTestTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SceneKitTest.app/SceneKitTest";
-			};
-			name = Debug;
-		};
-		65F8E91C1AD3C8670031B764 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SceneKitTestTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SceneKitTest.app/SceneKitTest";
+				PRODUCT_NAME = SolarSystem;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		65F8E8F11AD3C8670031B764 /* Build configuration list for PBXProject "SceneKitTest" */ = {
+		65F8E8F11AD3C8670031B764 /* Build configuration list for PBXProject "SolarSystem" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				65F8E9151AD3C8670031B764 /* Debug */,
@@ -404,21 +302,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		65F8E9171AD3C8670031B764 /* Build configuration list for PBXNativeTarget "SceneKitTest" */ = {
+		65F8E9171AD3C8670031B764 /* Build configuration list for PBXNativeTarget "SolarSystem" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				65F8E9181AD3C8670031B764 /* Debug */,
 				65F8E9191AD3C8670031B764 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		65F8E91A1AD3C8670031B764 /* Build configuration list for PBXNativeTarget "SceneKitTestTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				65F8E91B1AD3C8670031B764 /* Debug */,
-				65F8E91C1AD3C8670031B764 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

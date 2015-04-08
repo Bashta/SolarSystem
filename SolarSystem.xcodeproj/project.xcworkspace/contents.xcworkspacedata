@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:SceneKitTest.xcodeproj">
+      location = "self:SolarSystem.xcodeproj">
    </FileRef>
 </Workspace>

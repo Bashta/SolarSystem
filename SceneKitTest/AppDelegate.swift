@@ -1,10 +1,5 @@
-//
-//  AppDelegate.swift
-//  SceneKitTest
-//
-//  Created by Alb on 4/7/15.
-//  Copyright (c) 2015 01Logic. All rights reserved.
-//
+
+
 
 import UIKit
 
