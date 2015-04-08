@@ -7,10 +7,13 @@ class SolarSystemScene: SCNScene {
 
 	var contentNode:SCNNode //Top level node of the solar system scene
 
-	var wireframeBoxNode:SCNNode
-	var sunNode:SCNNode
-	var earthNode:SCNNode
-	var earthGroupNode:SCNNode
+	let wireframeBoxNode:SCNNode
+	let sunNode:SCNNode
+	let earthNode:SCNNode
+	let earthGroupNode:SCNNode
+	let earthRotationNode:SCNNode
+	let moonRotationNode:SCNNode
+	let moonNode:SCNNode
 
 	override init () {
 
@@ -29,16 +32,16 @@ class SolarSystemScene: SCNScene {
 		sunNode = SCNNode()
 		sunNode.position = SCNVector3Make(0, 0, 0)
 		sunNode.addChildNode(wireframeBoxNode.copy() as SCNNode) // copy is cheap 
-
+		contentNode.addChildNode(sunNode)
 
 		//Earth-rotation (center of rotation of the Earth around the Sun)
-		var earthRotationNode = SCNNode()
+	   earthRotationNode = SCNNode()
 		sunNode.addChildNode(earthRotationNode)
 
 		// Earth-group (will contain the Earth, and the Moon)
 		earthGroupNode = SCNNode()
 		earthGroupNode.position = SCNVector3Make(5, 0, 0)
-
+		contentNode.addChildNode(earthGroupNode)
 
 		// Earth
 		earthNode = wireframeBoxNode.copy() as SCNNode
@@ -48,11 +51,11 @@ class SolarSystemScene: SCNScene {
 		//Rotate the Earth around the Sun
 		let animation = CABasicAnimation(keyPath: "rotation")
 		animation.duration = 10.0;
-		animation.fromValue = NSValue(SCNVector4: SCNVector4Make(0, 0, 1, 0))
-		animation.toValue = NSValue(SCNVector4: SCNVector4Make(0, 0, 1, Float(M_PI) * 2.0))
+		animation.fromValue = NSValue(SCNVector4: SCNVector4Make(0, 2, 1, 0))
+		animation.toValue = NSValue(SCNVector4: SCNVector4Make(0, 2, 1, Float(M_PI) * 2.0))
 		animation.repeatCount = FLT_MAX
 		earthRotationNode.addAnimation(animation, forKey: "earth rotation around the sun")
-
+		earthRotationNode.addChildNode(earthGroupNode)
 
 
 		// Rotate the Earth
@@ -63,11 +66,40 @@ class SolarSystemScene: SCNScene {
 		animation2.repeatCount = FLT_MAX
 		earthNode.addAnimation(animation2, forKey: "earth rotation")
 
-		//It's impotant the ordein in which we add the nodes to the view so the animation works correctly
+		// Moon-rotation (center of rotation of the Moon around the Earth)
+		moonRotationNode = SCNNode()
+		earthGroupNode.addChildNode(moonRotationNode)
 
-		contentNode.addChildNode(earthGroupNode)
-		contentNode.addChildNode(sunNode)
-		earthRotationNode.addChildNode(earthGroupNode)
+		// Moon
+		moonNode = SCNNode()
+		moonNode.position = SCNVector3Make(5, 0, 0)
+		moonNode.addChildNode(wireframeBoxNode.copy() as SCNNode) // copy is cheap
+		moonRotationNode.addChildNode(moonNode)
+
+		// Rotate the moon around the earth
+		let animation3 = CABasicAnimation(keyPath: "rotation")
+		animation3.duration = 1.5
+		animation3.fromValue = NSValue(SCNVector4: SCNVector4Make(0, 2, 1, 0))
+		animation3.toValue = NSValue(SCNVector4: SCNVector4Make(0, 2, 1, Float(M_PI) * 2.0))
+		animation3.repeatCount = FLT_MAX
+		moonRotationNode.addAnimation(animation3, forKey: "moon rotation around earth")
+
+		//Rotate the moon
+		let animation4 = CABasicAnimation(keyPath: "rotation")
+		animation4.duration = 1.5
+		animation4.fromValue = NSValue(SCNVector4: SCNVector4Make(0, 1, 0, 0))
+		animation4.toValue = NSValue(SCNVector4: SCNVector4Make(0, 1, 0, Float(M_PI) * 2.0))
+		animation4.repeatCount = FLT_MAX
+		moonNode.addAnimation(animation4, forKey: "moon rotation")
+
+
+
+
+		//It's impotant the orde in in which we add the nodes to the view so the animation works correctly
+
+
+
+
 
 		super.init()
 		rootNode.addChildNode(contentNode)
